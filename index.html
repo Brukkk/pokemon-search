@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokemon</h1>
+        <form>
+            <input type="text" id="query" placeholder="Search any pokemon or by #number">
+            <button>Search</button>
+        </form>
+        <p id="error" class="alert">Ops! Something went wrong, make sure you spelled the name right or a valid id</p>
+    </header>
+    <section class="pokemons">
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
