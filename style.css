@@ -15,9 +15,18 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
-header h1{
-    font-size: 3rem;
+form input[type="text"]{
+    width: 35ch;
+    padding: 0.5em 1.5em;
+
+}
+
+form button{
+    padding: 0.5em 1.5em;
+    cursor:pointer;
 }
 
 .alert{
@@ -36,7 +45,7 @@ header h1{
 .pokemons{
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 800px;
     gap: 1.5rem;
     margin: 1rem auto 0;
@@ -74,7 +83,7 @@ header h1{
     width: 10ch;
     padding: 0.25em 0;
     color:white;
-    text-shadow: -1px 1px 1px black;
+    text-shadow: -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black,1px 1px 1px black;
     border-radius: 2rem;
     border: 1px solid white;
 }

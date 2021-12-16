@@ -37,6 +37,8 @@ form.addEventListener("submit", async (e)=>{
             console.log("Ups, hubo un error",e);
         });
     // CREATING ELEMENTS
+    console.log(res);
+
     let container = document.createElement("div");
     let typesDiv = document.createElement("div");
     let name = document.createElement("h2");
@@ -60,7 +62,8 @@ form.addEventListener("submit", async (e)=>{
     container.append(number);
     container.append(image);
     container.append(typesDiv);
-    
+
+    // Setting each type ( max = 2)
     newPokemontypes.forEach((type)=>{
         let newSpan = document.createElement("span");
         newSpan.textContent = type;
@@ -69,6 +72,10 @@ form.addEventListener("submit", async (e)=>{
         typesDiv.append(newSpan);
     })
     
+    
+
+
     pokemons.insertBefore(container,pokemons.firstChild);
+    // RESET INPUT ON SUBMIT
     input.value = '';
 })
