@@ -104,24 +104,19 @@ form.addEventListener("submit", async (e)=>{
         .attr("y", (d, i) => h - d - 20)
         .attr("width", 30)
         .attr("height", (d)=> `${d}px`)
-        .attr("fill",`${colorTypes[newPokemontypes[0]]}`);
+        .attr("fill",`${colorTypes[newPokemontypes[0]]}`)
+        .append("title")
+        .text((d,i)=> d);
     
       
     svg.selectAll("text")
-        .data(dataset)
-        .enter()
-        .append("text")
-        .attr("x",(d,i) => i * 50 +15)
-        .attr("y",(d,i) => h - d - 20)
-        .text((d,i) => d);
-    
-    /* svg.selectAll("text")
         .data(statNames)
         .enter()
         .append("text")
-        .attr("x",(d,i) => i * 50 +15)
-        .attr("y",(d,i) => h )
-        .text((d,i) => d);   */
+        .attr("x",(d,i) => i * 50 +12)
+        .attr("y",(d,i) => h)
+        .attr("font-size","14px")
+        .text((d,i) => d)
     pokemons.insertBefore(container,pokemons.firstChild);
     // RESET INPUT ON SUBMIT
     input.value = '';
