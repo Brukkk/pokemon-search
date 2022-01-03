@@ -87,7 +87,7 @@ form.addEventListener("submit", async (e)=>{
     });
     
     let statNames = ["HP","ATK","DEF","SAtk","SDef","SPD"]
-    const w = 300;
+    const w = 235;
     const h = 200;
     const svg = d3.select(grid)
         .append("svg")
@@ -99,10 +99,10 @@ form.addEventListener("submit", async (e)=>{
         .append("rect")
         .attr("class", "bar")
         .attr("x", (d, i) => {
-            return i * 50 + 10
+            return i * 52 
         })
         .attr("y", (d, i) => h - d - 20)
-        .attr("width", 30)
+        .attr("width", 25)
         .attr("height", (d)=> `${d}px`)
         .attr("fill",`${colorTypes[newPokemontypes[0]]}`)
         .append("title")
@@ -113,7 +113,7 @@ form.addEventListener("submit", async (e)=>{
         .data(statNames)
         .enter()
         .append("text")
-        .attr("x",(d,i) => i * 50 +12)
+        .attr("x",(d,i) => i * 51 )
         .attr("y",(d,i) => h)
         .attr("font-size","14px")
         .text((d,i) => d)
