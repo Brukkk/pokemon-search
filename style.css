@@ -42,7 +42,7 @@ form button{
 .pokemons{
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     max-width: 800px;
     gap: 1.5rem;
     margin: 1rem auto 0;
@@ -50,7 +50,7 @@ form button{
 
 .container{
     border: 2px solid black;
-    min-width: 250px;
+    min-width: 300px;
     max-width: 400px;
     padding: 1em 2em;
     border-radius: 10%;
