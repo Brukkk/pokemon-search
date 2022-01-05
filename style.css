@@ -47,7 +47,7 @@ form button{
     display: grid;
     place-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 800px;
+    max-width: 1000px;
     gap: 1.5rem;
     margin: 1rem auto 0;
 }
